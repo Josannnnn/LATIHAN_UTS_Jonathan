@@ -4,12 +4,12 @@ const mongoose = require("mongoose");
 const transaksiSchema = new mongoose.Schema({
     produk_id: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Transaksi'
+        ref: 'Transaksi',
         require: true,
     },
     pengguna_id: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Transaksi'
+        ref: 'Transaksi',
         require:true
     },
     jumlah: {
@@ -26,5 +26,5 @@ const transaksiSchema = new mongoose.Schema({
 
 
 
-const Mahasiswa = mongoose.model("Transaksi", transaksiSchema);
+const transaksi = mongoose.model("Transaksi", transaksiSchema);
 module.exports = transaksi;

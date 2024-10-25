@@ -26,5 +26,5 @@ const ulasanSchema = new mongoose.Schema({
 
 
 
-const Mahasiswa = mongoose.model("Ulasan", ulasanSchema);
+const ulasan = mongoose.model("Ulasan", ulasanSchema);
 module.exports = ulasan;
